@@ -9,7 +9,7 @@ on CentOS 5.7
 Requirements
 ============
 
-* [Opscode's php cookbook]{http://community.opscode.com/cookbooks/php/}
+* [Opscode's php cookbook](http://community.opscode.com/cookbooks/php/)
 
 Attributes
 ==========
