@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: pear
+# Cookbook Name:: php_pear
 # Recipe:: default
 #
 # Copyright 2012, xforty technologies
