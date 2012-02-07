@@ -21,11 +21,11 @@ include_recipe "php"
 
 execute "download_pear" do
   cwd "/tmp"
-  command "wget http://pear.php.net/go-pear.phar"
-  not_if { File.exists?("/tmp/go-pear.phar") }
+  command "wget http://pear.php.net/install-pear-nozlib.phar"
+  not_if { File.exists?("/tmp/install-pear-nozlib.phar") }
 end
 
 execute "install_pear" do
   cwd "/tmp"
-  command "php go-pear.phar"
+  command "php install-pear-nozlib.phar"
 end
