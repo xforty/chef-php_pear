@@ -18,6 +18,7 @@
 #
 
 include_recipe "php"
+package "wget"
 
 execute "download_pear" do
   cwd "#{node['php']['pear']['download']['folder']}"
