@@ -23,7 +23,7 @@ package "wget"
 execute "download_pear" do
   cwd "#{node['php']['pear']['download']['folder']}"
   command "wget #{node['php']['pear']['download']['url']}/#{node['php']['pear']['download']['filename']}"
-  not_if { File.exists?("/tmp/#{node['php']['pear']['download']['filename']}") }
+  not_if { File.exists?("#{node['php']['pear']['download']['folder']}/#{node['php']['pear']['download']['filename']}") }
 end
 
 execute "install_pear" do
