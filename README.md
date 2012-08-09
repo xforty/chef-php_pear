@@ -1,6 +1,6 @@
 chef-php_pear
 =============
-version 1.0.x - [changelog](https://github.com/xforty/chef-php_pear/blob/master/CHANGELOG.md)
+version 1.0.0 - [changelog](https://github.com/xforty/chef-php_pear/blob/master/CHANGELOG.md)
 
 ### Description
 
@@ -12,7 +12,7 @@ is the newest version available via yum on CentOS 5.7
 
 ### Requirements
 
-* See [metadata.rb](https://github.com/xforty/chef-php_pear/blob/master/metadata.rb)
+See [metadata.rb](https://github.com/xforty/chef-php_pear/blob/master/metadata.rb)
 
 ### Attributes
 
