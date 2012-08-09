@@ -1,6 +1,7 @@
 #
+# Author:: David King <dking@xforty.com>
 # Cookbook Name:: php_pear
-# Recipe:: default
+# Attributes:: default
 #
 # Copyright 2012, xforty technologies
 #
@@ -17,16 +18,6 @@
 # limitations under the License.
 #
 
-include_recipe "php"
-package "wget"
-
-execute "download_pear" do
-  cwd "#{node['php']['pear']['download']['folder']}"
-  command "wget #{node['php']['pear']['download']['url']}/#{node['php']['pear']['download']['filename']}"
-  not_if { File.exists?("#{node['php']['pear']['download']['folder']}/#{node['php']['pear']['download']['filename']}") }
-end
-
-execute "install_pear" do
-  cwd "#{node['php']['pear']['download']['folder']}"
-  command "php #{node['php']['pear']['download']['filename']}"
-end
+default['php']['pear']['download']['folder']   = "/tmp"
+default['php']['pear']['download']['url']      = "http://pear.php.net"
+default['php']['pear']['download']['filename'] = "install-pear-nozlib.phar"
